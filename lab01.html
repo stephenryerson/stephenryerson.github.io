@@ -2,11 +2,22 @@
 <html>
    
 <!-- Password -->
-<script src="password.js"></script>
+<!-- <script src="password.js"></script> -->
 
-<!-- Title -->
+
 <head>
+<!-- Encoding -->   
 <meta charset="UTF-8">
+<!-- Password -->
+<script>
+var password = "test12345";
+var input = prompt('Enter the password',' ');
+while (password != input)
+{
+var input = prompt('Access Denied: Invalid Password. Please try again',' ');
+}
+</script>
+<!-- Title -->
 <title>CPS530: Lab 01</title>
 </head>
 
