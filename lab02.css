@@ -23,6 +23,9 @@
       border-left: 1px solid black;
       border-top: 1px solid black;
    }
+   td:first-child {
+      border-left: none;
+   }
    ul {
       color: black;
    }
