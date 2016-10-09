@@ -8,10 +8,11 @@
    h1 {
       text-shadow: 5px 5px 5px #999999;
    }
-
+/*
    table, th, td {
       border: 1px solid black;
    }
+*/
    table {
       border-collapse: collapse;
       border-spacing: 0;
