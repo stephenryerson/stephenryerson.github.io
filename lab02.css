@@ -1,6 +1,9 @@
 /* CSS */
-   .center {
+   div.center {
       text-align: center;
+   }
+   div.bold {
+      font-weight: bold;
    }
    table, th, td {
       border: 1px solid black;
@@ -13,9 +16,6 @@
    }
    p {
       text-align: left;
-   }
-   p.bold {
-      font-weight: bold;
    }
    p.small {
       font-size: 10px;
