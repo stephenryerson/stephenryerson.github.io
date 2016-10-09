@@ -9,15 +9,19 @@
       text-shadow: 5px 5px 5px #999999;
    }
 
-   th, td {
+   table, th, td {
       border: 1px solid black;
    }
-
    table {
       border-collapse: collapse;
       border-spacing: 0;
    }
-
+   th:first-child {
+      border-radius: 10px 0 0 0;
+   }
+   th:last-child {
+      border-radius: 0 10px 0 0;
+   }
    ul {
       color: black;
    }
@@ -27,6 +31,7 @@
    p.small {
       font-size: 10px;
    }
+/*
    #rcorners {
       border-radius: 25px;
       border: 1px solid black;
@@ -34,3 +39,4 @@
       width: 200px;
       height: 150px;
    }
+*/
