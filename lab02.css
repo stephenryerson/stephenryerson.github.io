@@ -14,7 +14,7 @@
    }
 */
    table {
-      border-collapse: separate;
+      border-collapse: collapse;
       border: 1px solid black;
       border-radius: 10px;
       /*border-spacing: 0;*/
