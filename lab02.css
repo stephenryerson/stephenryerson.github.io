@@ -23,7 +23,7 @@
       border-left: 1px solid black;
       border-top: 1px solid black;
    }
-   td:first-child {
+   td:first-child, th:first-child {
       border-left: none;
    }
    ul {
