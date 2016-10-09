@@ -1,8 +1,8 @@
 /* CSS */
-   div.center {
+   .center {
       text-align: center;
    }
-   div.bold {
+   .bold {
       font-weight: bold;
    }
    table, th, td {
