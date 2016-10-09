@@ -26,6 +26,9 @@
    td:first-child, th:first-child {
       border-left: none;
    }
+   th:only-child {
+      border-top: none;
+   }
    ul {
       color: black;
    }
