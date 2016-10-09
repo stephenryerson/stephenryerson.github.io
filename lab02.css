@@ -14,14 +14,14 @@
    }
 */
    table {
-      border-collapse: collapse;
-      border-spacing: 0;
+      border-collapse: separate;
+      border: 1px solid black;
+      border-radius: 10px;
+      /*border-spacing: 0;*/
    }
-   th:first-child {
-      border-radius: 10px 0 0 0;
-   }
-   th:last-child {
-      border-radius: 0 10px 0 0;
+   td, th {
+      border-left: 1px solid black;
+      border-top: 1px solid black;
    }
    ul {
       color: black;
