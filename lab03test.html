@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Encoding -->   
+    <meta charset="UTF-8">
+    <!-- Password -->
+    <script>
+      var password = "test12345";
+      var input = prompt('Enter the password','');
+      while (password != input)
+      {
+        var input = prompt('Access Denied: Invalid Password. Please try again','');
+      }
+    </script>
+    <!-- Title -->
+    <title>CPS530: Lab 03</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="lab03.css">
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">CPS530: Web Systems Development</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://stephenryerson.github.io/index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left -->
+        <div class="col-md-3" style="background-color:#ddeeff">
+          <div class="center">
+          <span style="font-weight:bold;font-size:14px;color:#1234cc;"><b>Labs</b></span><br>
+          <button type="button" class="btn btn-primary">Lab 1</button><br>
+          <button type="button" class="btn btn-primary">Lab 2</button><br>
+          <a href="https://stephenryerson.github.io/lab03.html" role="button" class="btn btn-info">Lab 3</a><br>
+          <button type="button" class="btn btn-primary">Lab 4</button><br>
+          <button type="button" class="btn btn-primary">Lab 5</button><br>
+          <button type="button" class="btn btn-primary">Lab 6</button><br>
+          <button type="button" class="btn btn-primary">Lab 7</button><br>
+          </div>
+          <br>
+          <!-- Information -->
+          <div class="center">
+          <span style="font-weight:bold;font-size:14px;color:#1234cc;"><b>Information</b></span>
+          </div>
+          <!-- List -->
+          <ul>
+            <li>Name: Stephen Nguyen</li>
+            <li>Student Number: 500586582</li>
+          </ul>
+          <!-- Image -->
+          <div class="center">
+          <img src="http://cps530.scs.ryerson.ca/labs/internet.gif" width="120">
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="col-md-9">
+          <!-- Lab 03 -->
+          <div style="font-family:verdana,arial,helvetica;color:#336699;font-size:11pt;">
+          <h1>Lab #3</h1>
+
+          <p>
+          <h3>Objective:</h3>
+          <p>Using Bootstrap, remove the frame containing the menu of the lab manual and replace it with Bootstrap buttons in the grid system (only the link to lab 3 must be functional). Also, in the line of the <a href="http://www.csszengarden.com/">Zen Garden website</a>, re-format *this* webpage (the lab 3 description  - this lab page is located at http://cps530.scs.ryerson.ca/labs/lab03.html) using creative graphics and CSS. Use the view source function of your browser to copy/paste the HTML code.</p>
+
+	  <b>Requirements:</b>
+	  <ol>
+	  <li>Do not add any text (content) to this page except:
+	    <ul><li><b>class="<i>classname</i>"</b> as attributes to tags;</li>
+	    <li>the Bootstrap links and extra elements required to create grids and buttons (like div tags required by Bootstrap)</li>
+	    <li>the &lt;link&gt; tag to your style sheet;</li>
+	    <li>your name and student number.</li>
+	    </ul>
+	  <li>You can add your own images but you cannot remove the exisiting images (the lab logo which you can resize or reposition).
+	  <li>Your css file must be external.</li>
+	  <li>Try a lot of things, experiment!</li>
+	  </ol>
+
+	  <p>
+	  <b>Submission:</b><br>
+	  Submit the URL of your main page and your login and/or password (if password protected) using Brightspace (my.ryerson.ca).<br><br>
+
+	  <em style="color:#aa0000;">Due on or before Sunday October 23, 11:59 p.m. - No late submissions will be accepted.</em>
+	  </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
