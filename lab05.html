@@ -27,8 +27,18 @@
         $("#content_1b").show();
         
         $("#content_1a").click(function() {
+           $("[id^=content_][id$=b]").hide();
+           $("#content_1b").show();
+        });
+        
+        $("#content_2a").click(function() {
           $("[id^=content_][id$=b]").hide();
-          $("#content_1b").show();
+          $("#content_2b").show();
+        });
+        
+        $("#content_3a").click(function() {
+          $("[id^=content_][id$=b]").hide();
+          $("#content_3b").show();
         });
       });
     </script>
@@ -44,12 +54,12 @@
           <a class="navbar-brand" href="https://stephenryerson.github.io/index.html">CPS530: Web Systems Development</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#" id="content_1a">Information</a></li>
+          <li class="active"><a href="#info" id="content_1a">Information</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab 05<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Part 1</a></li>
-              <li><a href="#">Part 2</a></li>
+              <li><a href="#part1" id="content_2a">Part 1</a></li>
+              <li><a href="#part2" id="content_3a">Part 2</a></li>
             </ul>
           </li>
         </ul>
@@ -67,6 +77,14 @@
           <li>Name: Stephen Nguyen</li>
           <li>Student Number: 500586582</li>
         </ul>
+      </div>
+      
+      <!-- Part 1 -->
+      <div id="content_2b">
+      </div>
+      
+      <!-- Part 2 -->
+      <div id="content_3b">
       </div>
       
     </div>
