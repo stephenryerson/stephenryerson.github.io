@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Encoding -->   
+  <meta charset="UTF-8">
+  <!-- Title -->
+  <title>CPS530: Lab 04 Part 2</title>
+  <!-- Script -->
+  <script type="text/JavaScript">
+    function validate(name) {
+      var alpha = /^[A-Za-z]+$/;
+      if(!name.value.match(alpha)) {
+        alert("Invalid name.");
+        return false;
+      }
+  </script>
+</head>
+
+<!-- Body -->
+<body>
+  <p>Create an account: (All of the fields are required)</p>
+  <form action="https://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab04p2.pl" method="post" onSubmit="return validate(document.getElementById('username'))">
+    <input required type="text" name="username" placeholder="Username">
+    <br>
+    <input required type="text" name="password" placeholder="Password">
+    <br>
+    <input required type="text" name="email" placeholder="Email Address">
+    <br>
+    <input type="radio" name="gender" value="male" checked>Male
+    <input type="radio" name="gender" value="female">Female
+    <br>
+    <select required name="yearofbirth">
+      <option value="" disabled selected>Year of Birth</option>
+      <script>
+        for(var i = 2016; i >= 1950; i--)
+          document.write('<option value="' + i + '">' + i + '</option>')
+      </script>
+    </select>
+    <br>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
