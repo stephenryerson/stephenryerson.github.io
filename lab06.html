@@ -22,20 +22,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Show/Hide Content -->
+    <!-- Script -->
     <script>
       $(document).ready(function() {
+        //Show default (Information)
         $("[id^=content_][id$=b]").hide();
         $("#content_1b").show();
         
+        //Show Information
         $("#content_1a").click(function() {
            $("[id^=content_][id$=b]").hide();
            $("#content_1b").show();
         });
         
+        //Show lab06
         $("#content_2a").click(function() {
            $("[id^=content_][id$=b]").hide();
            $("#content_2b").show();
+        });
+        
+        //Submit button pressed
+        $('#submit').submit(function(e) {
+          e.preventDefault(); // to stop the form from submitting
+          // Validations go here
+          this.submit(); // If all the validations succeeded
         });
       });
     </script>
@@ -79,7 +89,7 @@
           <br>
           <input required type="text" name="number" placeholder="Phone Number">
           <br>
-          <input type="submit">
+          <input type="submit" id="submit">
         </form>
       </div>
       
