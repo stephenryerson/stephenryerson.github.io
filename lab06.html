@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Encoding -->   
+    <meta charset="UTF-8">
+    <!-- Password -->
+    <script>
+      /*
+      var password = "test12345";
+      var input = prompt('Enter the password','');
+      while (password != input)
+      {
+        var input = prompt('Access Denied: Invalid Password. Please try again','');
+      }
+      */
+    </script>
+    <!-- Title -->
+    <title>CPS530: Lab 06</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Show/Hide Content -->
+    <script>
+      $(document).ready(function() {
+        $("[id^=content_][id$=b]").hide();
+        $("#content_1b").show();
+        
+        $("#content_1a").click(function() {
+           $("[id^=content_][id$=b]").hide();
+           $("#content_1b").show();
+        });
+        
+        $("#content_2a").click(function() {
+           $("[id^=content_][id$=b]").hide();
+           $("#content_2b").show();
+        });
+      });
+    </script>
+  </head>
+  
+  <!-- Body -->
+  <body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://stephenryerson.github.io/index.html">CPS530: Web Systems Development</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#info" id="content_1a">Information</a></li>
+          <li><a href="#" id="content_2a">Lab 06</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Contents -->
+    <div class="container">
+      
+      <!-- Information -->
+      <div id="content_1b">
+        <p><strong>Information</strong></p>
+        <!-- List -->
+        <ul>
+          <li>Name: Stephen Nguyen</li>
+          <li>Student Number: 500586582</li>
+        </ul>
+      </div>
+      
+      <!-- Lab 06 -->
+      <div id="content_2b">
+        <form action="https://www2.scs.ryerson.ca/~slnguyen/cps530/lab05/lab05p1.php" method="post">
+          <input required type="text" name="name" placeholder="Name">
+          <br>
+          <input required type="text" name="address" placeholder="Address">
+          <br>
+          <input required type="text" name="number" placeholder="Phone Number">
+          <br>
+          <input type="submit">
+        </form>
+      </div>
+      
+    </div>
+  </body>
+</html>
