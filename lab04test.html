@@ -7,7 +7,7 @@
   <!-- Title -->
   <title>CPS530: Lab 04 Part 2</title>
   <!-- Script -->
-  <script type="text/JavaScript">
+  <script>
       //Form validation
       function validate(name, number) {
         var nameFormat = /^[A-Za-z]+$/; //letters only
@@ -18,7 +18,7 @@
           return false;
         }
         if(!number.value.match(phoneFormat)) {
-          alert("Invalid phone number format. The phone number must be 'XXX-XXXX-XXXX' where X is a digit.");
+          alert("Invalid phone number format. The phone number must be 'XXX-XXXX-XXXX' where X is a digit. Note that each digit does not have to be the same.");
           return false;
         }
         return true;
