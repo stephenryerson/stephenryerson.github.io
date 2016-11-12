@@ -40,15 +40,18 @@
            $("[id^=content_][id$=b]").hide();
            $("#content_2b").show();
         });
-        
-        //Submit button pressed
-        $('#submit').submit(function(e) {
-          e.preventDefault(); // to stop the form from submitting
-          alert("Hello! I am an alert box!!");
-          // Validations go here
-          this.submit(); // If all the validations succeeded
-        });
       });
+      
+        //Form validation
+        function validate(name, number) {
+          var nameFormat = /^[A-Za-z]+$/; //letters only
+          var phoneFormat = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/; XXX-XXX-XXXX
+          
+          if(!name.value.match(alpha)) {
+            alert("Invalid name.");
+            return false;
+          }
+        }
     </script>
   </head>
   
@@ -83,10 +86,14 @@
       
       <!-- Lab 06 -->
       <div id="content_2b">
-        <form action="https://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab06.rb" method="post">
+        <form action="https://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab06.rb" method="post" onSubmit="return validate(document.getElementById('name'), document.getElementById('number'))">
           <input required type="text" name="name" placeholder="Name">
           <br>
           <input required type="text" name="address" placeholder="Address">
+          <br>
+          <input required type="text" name="city" placeholder="City">
+          <br>
+          <input required type="text" name="province" placeholder="Province">
           <br>
           <input required type="text" name="number" placeholder="Phone Number">
           <br>
