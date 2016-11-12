@@ -42,17 +42,22 @@
         });
       });
       
-      /*
-        //Form validation
-        function validate(name, number) {
-          var nameFormat = /^[A-Za-z]+$/; //letters only
-          var phoneFormat = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/; XXX-XXX-XXXX
+      //Form validation
+      function validate(name, number) {
+        var nameFormat = /^[A-Za-z]+$/; //letters only
+        var phoneFormat = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/; XXX-XXX-XXXX
           
-          if(!name.value.match(alpha)) {
-            alert("Invalid name.");
-            return false;
-          }
+        if(!name.value.match(nameFormat)) {
+          alert("Invalid name format. The name can only consist of letters.");
+          return false;
         }
+        if(!number.value.match(phoneFormat)) {
+          alert("Invalid phone number format. The phone number must be XXX-XXXX-XXXX where X is a digit.");
+          return false;
+        }
+        
+        return true;
+      }
         */
     </script>
   </head>
@@ -88,8 +93,8 @@
       
       <!-- Lab 06 -->
       <div id="content_2b">
-        <form action="http://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab06.rb" method="post">
-          <input required type="text" name="name" placeholder="Name">
+        <form action="http://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab06.rb" method="post" onSubmit="return validate(document.getElementById('name'), document.getElementById('number'))">
+          <input required type="text" name="name" id="name" placeholder="Name">
           <br>
           <input required type="text" name="address" placeholder="Address">
           <br>
@@ -97,7 +102,7 @@
           <br>
           <input required type="text" name="province" placeholder="Province">
           <br>
-          <input required type="text" name="number" placeholder="Phone Number">
+          <input required type="text" name="number" id="number" placeholder="Phone Number">
           <br>
           <input type="submit" id="submit">
         </form>
