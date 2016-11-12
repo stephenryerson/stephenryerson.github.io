@@ -7,29 +7,32 @@
   <!-- Title -->
   <title>CPS530: Lab 04 Part 2</title>
   <!-- Script -->
-  <script type="text/JavaScript">
-    <!--
-    function validate(name) {
-      var alpha = /^[A-Za-z]+$/;
-      if(!name.value.match(alpha)) {
-        alert("Invalid name.");
-        return false;
-      }
-      return true;
-    }
-    //-->
+  <script>
+      //Form validation
+      function validate(name, number) {
+        var nameFormat = /^[A-Za-z]+$/; //letters only
+        var phoneFormat = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/; XXX-XXX-XXXX
+          
+        if(!name.value.match(nameFormat)) {
+          alert("Invalid name format. The name can only consist of letters.");
+          return false;
+        }
+        if(!number.value.match(phoneFormat)) {
+          alert("Invalid phone number format. The phone number must be XXX-XXXX-XXXX where X is a digit.");
+          return false;
+        }
   </script>
 </head>
 
 <!-- Body -->
 <body>
   <p>Create an account: (All of the fields are required)</p>
-  <form action="https://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab04p2.pl" method="post" onSubmit="return validate(document.getElementById('username'))">
+  <form action="https://www2.scs.ryerson.ca/~slnguyen/cgi-bin/lab04p2.pl" method="post" onSubmit="return validate(document.getElementById('username'), document.getElementById('number'))">
     <input required type="text" name="username" placeholder="Username" id="username">
     <br>
     <input required type="text" name="password" placeholder="Password">
     <br>
-    <input required type="text" name="email" placeholder="Email Address">
+    <input required type="text" name="email" placeholder="Phone Number" id="number">
     <br>
     <input type="radio" name="gender" value="male" checked>Male
     <input type="radio" name="gender" value="female">Female
