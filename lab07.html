@@ -80,12 +80,15 @@
         <p id="part01"></p>
 
         <script>
-          var text, parser, xmlDoc;
-
-text = "<tracks><track>" + "<title>Koa Tree (2002)</title>" + "</track></tracks>";
-
-parser = new DOMParser();
-xmlDoc = parser.parseFromString(text,"text/xml");
+          //var text, parser, xmlDoc;
+          //text = "<tracks><track>" + "<title>Koa Tree (2002)</title>" + "</track></tracks>";
+          //parser = new DOMParser();
+          //xmlDoc = parser.parseFromString(text,"text/xml");
+          
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", false);
+          xmlhttp.send();
+          //document.getElementById("demo").innerHTML = xmlhttp.responseText;
 
           document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
         </script>
