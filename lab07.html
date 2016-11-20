@@ -78,16 +78,21 @@
       <!-- Part 1 -->
       <p id="content_2b"></p>
       <script>
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200)
           {
-            var xmlDoc = xmlhttp.responseXML;
-            document.getElementById("content_2b").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            myFunction(this);
           }
         };
-        xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
-        xmlhttp.send();
+        xhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
+        xhttp.send();
+
+        function myFunction(xml)
+        {
+          var xmlDoc = xml.responseXML;
+          document.getElementById("content_2b").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        }
       </script>
       
       <!-- Part 2 -->
