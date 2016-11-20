@@ -77,17 +77,22 @@
       
       <!-- Part 1 -->
       <div id="content_2b">
-
-        <button type="button" onclick="loadXMLDoc()">Change Content</button>
-
 <p id="demo"></p>
-      <script>
-function loadXMLDoc() {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
-  xmlhttp.send();
-  document.getElementById("demo").innerHTML = xmlhttp.responseText;
-}
+
+<script>
+var text, parser, xmlDoc;
+
+text = "<bookstore><book>" +
+"<title>Everyday Italian</title>" +
+"<author>Giada De Laurentiis</author>" +
+"<year>2005</year>" +
+"</book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 </script>
       </div>
       
