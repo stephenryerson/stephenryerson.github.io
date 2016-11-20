@@ -77,23 +77,18 @@
       
       <!-- Part 1 -->
       <div id="content_2b">
-<p id="demo"></p>
+        <p id="part01"></p>
 
-<script>
-var text, parser, xmlDoc;
+        <script>
+          var text, parser, xmlDoc;
 
-text = "<bookstore><book>" +
-"<title>Everyday Italian</title>" +
-"<author>Giada De Laurentiis</author>" +
-"<year>2005</year>" +
-"</book></bookstore>";
+text = "<tracks><track><title>Koa Tree (2002)</title></track></tracks>";
 
 parser = new DOMParser();
 xmlDoc = parser.parseFromString(text,"text/xml");
 
-document.getElementById("demo").innerHTML =
-xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-</script>
+          document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
       </div>
       
       <!-- Part 2 -->
