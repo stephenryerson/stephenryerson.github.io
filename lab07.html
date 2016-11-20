@@ -76,12 +76,13 @@
       </div>
       
       <!-- Part 1 -->
-      <p id="content_2b"></p>
+      <div id="content_2b">
+      <p id="test"></p>
       <script>
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
         xmlhttp.send();
-        document.getElementById("content_2b").innerHTML = xmlhttp.responseText;
+        document.getElementById("test").innerHTML = xmlhttp.responseText;
         //xmlhttp.onreadystatechange = function() {
           //if (this.readyState == 4 && this.status == 200)
           //{
@@ -91,6 +92,7 @@
           //}
         //};
       </script>
+      </div>
       
       <!-- Part 2 -->
       <div id="content_3b">
