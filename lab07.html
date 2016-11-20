@@ -77,19 +77,19 @@
       
       <!-- Part 1 -->
       <div id="content_2b">
-        <script>
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200)
-            {
-              document.getElementById("content_2b").innerHTML = this.responseText;
-              //var doc = xmlhttp.responseXML;
-            }
-          };
-          xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
-          xmlhttp.send();
-          </script>
       </div>
+      <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200)
+          {
+            document.getElementById("content_2b").innerHTML = this.responseText;
+            //var doc = xmlhttp.responseXML;
+          }
+        };
+        xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
+        xmlhttp.send();
+      </script>
       
       <!-- Part 2 -->
       <div id="content_3b">
