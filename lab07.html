@@ -82,8 +82,8 @@
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200)
           {
-            document.getElementById("content_2b").innerHTML = this.responseText;
-            //var doc = xmlhttp.responseXML;
+            var xmlDoc = xmlhttp.responseXML;
+            document.getElementById("content_2b").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
           }
         };
         xmlhttp.open("GET", "http://107.170.98.130/yr2/cache_yr2.txt", true);
