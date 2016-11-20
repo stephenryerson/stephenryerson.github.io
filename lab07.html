@@ -90,7 +90,7 @@
           xmlhttp.send();
           //document.getElementById("demo").innerHTML = xmlhttp.responseText;
 
-          document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("rank")[0];
+          document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
         </script>
       </div>
       
