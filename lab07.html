@@ -82,7 +82,7 @@
         <script>
           var text, parser, xmlDoc;
 
-text = "<tracks><track><title>Koa Tree (2002)</title></track></tracks>";
+text = "<tracks><track>" + "<title>Koa Tree (2002)</title>" + "</track></tracks>";
 
 parser = new DOMParser();
 xmlDoc = parser.parseFromString(text,"text/xml");
