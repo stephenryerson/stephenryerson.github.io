@@ -86,13 +86,15 @@
           //xmlDoc = parser.parseFromString(text,"text/xml");
           //document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
-          var parser, xmlDoc;
+          var text, parser, xmlDoc;
           var xmlhttp = new XMLHttpRequest();
           xmlhttp.open("GET", "http://www.w3schools.com/xml/xmlhttp_info.txt", false);
           xmlhttp.send();
+          document.getElementById("part01").innerHTML = xmlhttp.responseText;
+          //text = xmlhttp.responseText;
           //parser = new DOMParser();
-          //xmlDoc = parser.parseFromString(xmlhttp.responseText,"text/xml");
-          document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+          //xmlDoc = parser.parseFromString(text,"text/xml");
+          //document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
         </script>
       </div>
       
