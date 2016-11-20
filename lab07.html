@@ -87,7 +87,7 @@ text = "<tracks><track><title>Koa Tree (2002)</title></track></tracks>";
 parser = new DOMParser();
 xmlDoc = parser.parseFromString(text,"text/xml");
 
-          document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+          document.getElementById("part01").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
         </script>
       </div>
       
