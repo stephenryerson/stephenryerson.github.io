@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!-- Encoding -->   
+    <meta charset="UTF-8">
+    <!-- Password -->
+    <!-- Title -->
+    <title>CPS530: Lab 07</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Show/Hide Content -->
+    <script>
+      $(document).ready(function() {
+        //Show default (Information)
+        $("[id^=content_][id$=b]").hide();
+        $("#content_1b").show();
+        
+        //Show Information
+        $("#content_1a").click(function() {
+           $("[id^=content_][id$=b]").hide();
+           $("#content_1b").show();
+        });
+        
+        //Show lab07 - 1
+        $("#content_2a").click(function() {
+          $("[id^=content_][id$=b]").hide();
+          $("#content_2b").show();
+        });
+        
+        //Show lab07 - 2
+        $("#content_3a").click(function() {
+          $("[id^=content_][id$=b]").hide();
+          $("#content_3b").show();
+        });
+      });
+    </script>
+  </head>
+  
+  <!-- Body -->
+  <body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://stephenryerson.github.io/index.html">CPS530: Web Systems Development</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#info" id="content_1a">Information</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab 07<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#part1" id="content_2a">Part 1</a></li>
+              <li><a href="#part2" id="content_3a">Part 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Contents -->
+    <div class="container">
+      
+      <!-- Information -->
+      <div id="content_1b">
+        <p><strong>Information</strong></p>
+        <!-- List -->
+        <ul>
+          <li>Name: Stephen Nguyen</li>
+          <li>Student Number: 500586582</li>
+        </ul>
+      </div>
+      
+      <!-- Part 1 -->
+      <div id="content_2b">
+      
+      </div>
+      
+      <!-- Part 2 -->
+      <div id="content_3b">
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
