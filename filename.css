@@ -1,8 +1,6 @@
 .city {
 float: left;
-margin: 5px;
-padding: 15px;
-width: 50%;
+width: 25%;
 height: 300px;
 border: 1px solid black;
 }
