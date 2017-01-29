@@ -82,7 +82,7 @@ article {
   width: 96%;
 }
 
-@media (min-width: 300px) {
+@media only screen and (min-width: 300px) {
   .row1, .row2, .row3, .row4 {
     width: 96%;
   }
