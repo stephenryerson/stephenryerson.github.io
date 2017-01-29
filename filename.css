@@ -2,34 +2,7 @@
 float: left;
 margin: 5px;
 padding: 15px;
-width: 25%;
-height: 50%;
-border: 1px solid black;
-}
-
-.province {
-float: left;
-margin: 5px;
-padding: 15px;
 width: 50%;
-height: 600px;
-border: 1px solid black; 
-}
-
-.country {
-float: left;
-margin: 5px;
-padding: 15px;
-width: 200px;
-height: 200px;
-border: 1px solid black;
-}
-
-.continent {
-float: left;
-margin: 5px;
-padding: 15px;
-width: 150px;
-height: 150px;
+height: 25%;
 border: 1px solid black;
 }
