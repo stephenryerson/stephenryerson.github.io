@@ -15,3 +15,21 @@
   width: 96%;
   border: 1px solid black;
 }
+
+.country {
+float: left;
+margin-left: 1%;
+margin-right: 1%;
+margin-bottom: 1%;
+width: 30%;
+border: 1px solid black;
+}
+
+.continent {
+clear: left;
+margin-left: 1%;
+margin-right: 1%;
+margin-bottom: 1%;
+width: 23%;
+border: 1px solid black;
+}
