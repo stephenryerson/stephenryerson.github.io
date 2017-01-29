@@ -82,13 +82,13 @@ article {
   width: 96%;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-device-width: 300px) {
   .row1, .row2, .row3, .row4 {
     width: 96%;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-device-width: 600px) {
   .row1, .row2, .row3 {
     width: 96%;
   }
